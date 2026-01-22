@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'FontquanXinYiGuanHeiTi';
+    src: url('../fonts/FontquanXinYiGuanHeiTi-Regular.eot');
+    src: url('../fonts/FontquanXinYiGuanHeiTi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FontquanXinYiGuanHeiTi-Regular.woff2') format('woff2'),
+        url('../fonts/FontquanXinYiGuanHeiTi-Regular.woff') format('woff'),
+        url('../fonts/FontquanXinYiGuanHeiTi-Regular.ttf') format('truetype'),
+        url('../fonts/FontquanXinYiGuanHeiTi-Regular.svg#FontquanXinYiGuanHeiTi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

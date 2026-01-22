@@ -1,0 +1,1349 @@
+/* =========================================================
+   HEADER STYLES
+========================================================= */
+
+.site-header {
+	min-height: 92px;
+	padding: 25px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	transition: all 0.3s ease;
+}
+
+.site-header.is-sticky {
+	background-color: #F05B26;
+}
+
+.header-inner {
+	display: flex;
+}
+
+.header-logo {
+	width: 20%;
+	display: flex;
+	align-items: center;
+}
+
+.main-nav {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.main-nav ul li {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.main-nav ul li a {
+	text-decoration: none;
+	color: #FEFEF2;
+}
+.main-nav ul li a:hover
+{
+	color: #FAC5B2;
+}
+.main-nav ul li a.active
+{
+	color: #FAC5B2;
+}
+.site-header.is-sticky .main-nav ul li a:hover {
+    color: #F8AEB1;
+}
+.site-header.is-sticky .main-nav ul li a.active {
+    color: #F8AEB1;
+}
+
+.social-icons {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+.lang-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.lang-wrapper::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	width: 1px;
+	height: 15px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 102px;
+	height: 72px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 100;
+}
+
+.lang-option {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	transition: background 0.3s;
+}
+
+.lang-option.active {
+	background-color: #F05B26;
+	color: #FEFEF2;
+}
+
+.lang-option:not(.active) {
+	background-color: #FEFEF2;
+	color: #F05B26;
+}
+
+.lang-option:hover {
+	filter: brightness(0.95);
+}
+.tabler-menu
+{
+	display: none;
+}
+
+/* =========================================================
+   HERO / BANNER SECTION
+========================================================= */
+
+.hero-section {
+	position: relative;
+}
+
+/* Hero Heading */
+.hero-section h1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+	padding: 0 20px;
+	max-width: 1170px;
+	color: #FEFEF2;
+}
+
+.banner-slide {
+	height: 100vh;
+	background-position: center !important;
+	background-size: cover;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0 20px;
+}
+
+.banner-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(96 96 96 / 20%);
+}
+
+.banner-slide-1 {
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong.jpg);
+}
+
+.banner-slide-2 {
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong-food.jpg);
+}
+
+.hero-section .slick-dots {
+	display: flex !important;
+	position: absolute;
+	bottom: 28px;
+	left: 50px;
+	list-style: none;
+	gap: 12px;
+}
+
+.hero-section .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #FEFEF2;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	padding: 0;
+}
+
+.hero-section .slick-dots li.slick-active button {
+	background-color: #FEFEF2;
+}
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+	padding: 80px 20px;
+	background-color: #F7EFD7;
+}
+
+.about-section h3 {	 
+	margin: 0 auto 24px;
+	text-align: center;
+	color: #F05B26;
+}
+.about-section p
+{
+	text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    color: #FEFEF2;
+}
+
+/* =========================================================
+   FEATURED SELECTIONS
+========================================================= */
+
+
+.featured-selections-section .curry-set-inner {
+	 gap: 40px;
+}
+
+.left-section {
+	width: 50%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+.curry-set-header
+{
+	padding: 16px 40px;
+    display: flex;
+    background-color: #F05B26;
+    align-items: center;
+    justify-content: space-between;
+}
+.curry-set-header h3
+{
+	margin-bottom: 0;
+}
+.curry-set-body
+{
+	padding: 40px;
+    border: 1px solid #F05B26;
+}
+.curry-set-header .price
+{
+	font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: end;
+    line-height: 25px;
+    gap: 5px;
+}
+.curry-set-header .price strong
+{
+	font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+}
+.curry-set-body p{
+	    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #F05B26;
+}
+.right-section {
+	width: 50%;
+}
+
+.dish-item {
+	display: flex;
+	border-bottom: 1px solid #000;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+}
+
+.dish-item:last-child
+{
+	margin-bottom: 13px;
+}
+
+.dish-item-info {
+	width: 92%;
+	padding-right: 20px;
+}
+
+.dish-item-type {
+	width: 8%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.dish-item-type img {
+	width: 24px;
+}
+
+.dish-item-price-box {
+	width: 13%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+}
+
+.dish-label {
+	display: inline-block;
+	width: 100%;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 8px;
+}
+
+/* =========================================================
+   DISH SLIDER
+========================================================= */
+
+.dish-slider .dish
+{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	padding: 1px;
+}
+.dish-slider .dish:before
+{
+	content: "";
+ 	position: absolute;  	 	 
+  	pointer-events: none;
+  	background-color: #F05B26;
+  	clip-path: polygon(0 0,95% 0,100% 6%,100% 100%,5% 100%,0 94%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.dish-slider,
+.dish-slider .slick-list,
+.dish-slider .slick-track {
+	height: 100%;
+}
+
+.dish-slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	clip-path: polygon(0 0,95% 0,100% 6%,100% 100%,5% 100%,0 94%);
+}
+
+.dish-slider .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	list-style: none;
+	gap: 12px;
+}
+
+.dish-slider .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #F05B26;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.dish-slider .slick-dots li.slick-active button {
+	background-color: #F05B26;
+}
+
+.dish-slider .slick-prev,
+.dish-slider .slick-next {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -20px;
+	background-color: #F05B26;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.dish-slider .slick-prev {
+	top: 47%;
+	background-image: url(../images/Left-arrow.svg);
+}
+
+.dish-slider .slick-next {
+	top: 54%;
+	background-image: url(../images/Right-arrow.svg);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+	padding: 52px 20px 40px;
+	background-color: #F05B26;
+}
+
+.footer-top {
+	display: flex;
+	margin-bottom: 120px;
+}
+
+/* Footer Left */
+.footer-left {
+	width: 50%;
+	padding-top: 44px;
+}
+
+.footer-logo {
+	margin-bottom: 21px;
+}
+
+.footer-left p {
+	max-width: 240px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FEFEF2;
+	font-weight: 500;
+}
+
+.footer-left p a {
+	color: #FEFEF2;
+}
+
+.footer-left p a:hover {
+	color: #FAC5B2;
+}
+
+.footer-right {
+	width: 50%;
+    position: relative;
+    padding: 1px;
+}
+	
+.footer-right:before{
+	content: " ";
+	background-color: #FEFEF2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	clip-path: polygon(0 0, 92% 0, 100% 22%, 100% 100%, 0 100%);
+}
+.footer-right-box
+{	
+	display: flex;
+	padding: 44px 40px 44px 44px !important;
+	position: relative;
+	padding: 1px;
+	background-color: #F05B26;
+	z-index: 1;
+	clip-path: polygon(0 0, 92% 0, 100% 22%, 100% 100%, 0 100%);
+	height: 100%;
+}
+.footer-right-1 { width: 30%; }
+.footer-right-2 { width: 35%; }
+.footer-right-3 { width: 35%; }
+
+.footer-right ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-right ul li {
+	margin-bottom: 12px;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.footer-right ul li a {
+	color: #FEFEF2;
+	display: flex;
+	align-items: center;
+}
+
+.footer-right ul li a:hover {
+	color: #FAC5B2;
+}
+
+.footer-right-2 ul li a::after {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 4px;
+	background: url(../images/up-right-arrow-w.svg) center no-repeat;
+}
+
+.footer-right-2 ul li a:hover::after {
+	background-image: url(../images/up-right-hover.svg);
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #FEFEF2;
+	font-weight: 500;
+}
+
+
+.inner-hero-section
+{
+	position: relative;
+}
+
+/* Hero Heading */
+.inner-hero-section h1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1015px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+}
+
+.inner-hero-section .inner-banner-slide {
+	height: 100vh;
+	background-position: center !important;
+	background-size: cover;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0 20px;
+}
+
+.inner-hero-section .inner-banner-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(96 96 96 / 20%);
+}
+
+.inner-hero-section .inner-banner-slide-1 {
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong.jpg);
+}
+
+.inner-hero-section .inner-banner-slide-2 {
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong-curry-jelly.jpg);
+}
+.inner-hero-section .inner-banner-slide-3 {
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong-curry-set.jpg);
+}
+
+.inner-hero-section .slick-dots {
+	display: flex !important;
+	position: absolute;
+	bottom: 28px;
+	left: 50px;
+	list-style: none;
+	gap: 12px;
+}
+
+.inner-hero-section .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #FEFEF2;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	padding: 0;
+}
+
+.inner-hero-section .slick-dots li.slick-active button {
+	background-color: #FEFEF2;
+}
+
+.the-atmosphere-left
+{
+	width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: calc((100vw - 1200px) / 2);
+}
+ 
+.the-atmosphere-left p
+{
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+}
+.the-atmosphere-left .content-box
+{
+    width: 100%;
+    max-width: 465px;
+}
+.the-atmosphere-right
+{
+	width: 50%;
+}
+.the-atmosphere-right img
+{
+	width: 100%;
+	height: 770px;
+	object-fit: cover;
+}
+.crafted-section
+{
+	padding: 96px 20px;
+}
+.crafted-section h3
+{
+	font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+    padding: 0 30px;
+    margin-bottom: 34px;
+}
+.crafted-section h3:last-child
+{
+	margin-bottom: 0;
+}
+.crafted-section p
+{
+	font-size: 16px;
+	line-height: 24px;
+}
+.find-us-section
+{
+	padding: 96px 20px;
+}
+.title-with-button
+{
+	display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+.find-us-images
+{
+	display: flex;
+	gap: 20px;
+}
+.find-us-images-box
+{
+	width: 33.33%;
+}
+.find-us-images-box img
+{
+	height: 480px;
+	width: 100%;
+	object-fit: cover;
+}
+.about-slide
+{
+	padding: 1px;
+	position: relative;
+	margin: 0 12px;
+}
+.about-slide:before
+{
+	content: "";
+    position: absolute;
+    pointer-events: none;
+    background-color: #F05B26;
+    clip-path: polygon(0 0, 95% 0, 100% 6%, 100% 100%, 5% 100%, 0 94%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.about-slide img
+{
+	width: 100%;
+	height: 420px;
+	object-fit: cover;
+	clip-path: polygon(0 0, 95% 0, 100% 6%, 100% 100%, 5% 100%, 0 94%);
+}
+.about-slider-section .slick-dots
+{
+	display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 1250px;
+   margin: 0 auto;
+   border-radius: 100px;
+   height: 2px;
+   overflow: hidden;
+   margin-top: 32px;
+}
+.about-slider-section .slick-dots li
+{
+	font-size: 0;
+	width: 100%;
+}
+.about-slider-section .slick-dots li button
+{
+	padding: 0;
+	font-size: 0; 
+	width: 100%;
+	border: none;
+	height: 2px;
+	background-color: #EDE9E4;
+}
+.about-slider-section .slick-dots li.slick-active button
+{
+	background-color: #F05B26;
+	border-radius: 100px;
+}
+.about-slider-section .slick-prev
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: calc((100vw - 980px) / 2);
+	top: 45%;
+	background-color: #F05B26;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.about-slider-section .slick-next
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: calc((100vw - 980px) / 2);
+	top: 45%;
+	background-color: #F05B26;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.about-slider-section .slick-prev
+{
+	background-image: url(../images/Left-arrow.svg);
+}
+.about-slider-section .slick-next
+{
+	background-image: url(../images/Right-arrow.svg);
+}
+
+/* Location page*/
+
+.location-hero-section .inner-banner-slide-1
+{
+	background-image: url(../images/curryroom-curry-restaurant-hong-kong-graphic.jpg);
+	background-position: top !important;
+}
+.inner-hero-section.location-hero-section .inner-banner-slide::before
+{
+	display: none;
+}
+.causeway-bay-left
+{
+   width: 50%;
+   padding-right: 0;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+	justify-content: center;
+	position: relative;
+	padding: 1px;
+}
+.causeway-bay-left h3
+{
+	margin-bottom: 52px;
+}
+.causeway-bay-left-inner
+{
+	position: relative;
+    clip-path: polygon(0 0, 95% 0, 100% 6%, 100% 100%, 5% 100%, 0 94%);
+    background: #FEFEF2;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+.causeway-bay-left:before
+{
+	content: "";
+ 	position: absolute;  	 	 
+  	pointer-events: none;
+  	background-color: #F05B26;
+  	clip-path: polygon(0 0,95% 0,100% 6%,100% 100%,5% 100%,0 94%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.causeway-bay-section-inner
+{
+	gap: 80px;
+}
+.causeway-bay-right
+{
+	width: 50%;
+	padding-left: 0;
+}
+.causeway-bay-right img
+{
+	width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+.address-box-1 h5
+{
+	color: #F05B26;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.address-box-1 p
+{
+	color: #F05B26;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.address-box-2 p
+{
+	color: #F05B26;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.address-box-2 h5
+{
+	color: #F05B26;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.address-box
+{
+	display: flex;
+   gap: 40px;
+}
+.address-box-1
+{
+	width: 70%;
+}
+.address-box-2
+{
+	width: 30%;
+}
+.address-box-1 p a
+{
+	color: #000;
+}
+
+
+/*Our Menu */
+
+.menu-hero-section .inner-banner-slide::before
+{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.menu-hero-section .inner-banner-slide-1
+{
+	background-image: url(../images/curryroom-curryset-yogurtcurry-beef-ribs.jpg); 
+	background-position: 50% 35% !important;
+}
+.menu-hero-section .inner-banner-slide-2
+{
+	background-image: url(../images/1516-fushion-restaurant-drinks-aerial-view.jpg);
+}
+.menu-tabs-wrapper {
+  overflow-x: auto;
+  border-bottom: 1px solid #F8AEB1;
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: max-content;
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-tabs .tab {
+	padding: 0 24px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #F36D72;
+	cursor: pointer;
+	position: relative;
+	white-space: nowrap;
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+.menu-tabs .tab:hover
+{
+	color: #F05B26;
+	opacity: 1;
+}
+.menu-tabs .tab.active {
+  color: #F05B26;
+  opacity: 1
+}
+
+.menu-tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background: #ef1d1d;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.menu-content h2 {
+  font-size: 56px;
+  color: #ef1d1d;
+  line-height: 1.2;
+}
+.menu-tab-section
+{
+	padding: 64px 0 0 0;
+}
+.menu-suggestion
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 36px;
+}
+.menu-suggestion li
+{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #F05B26;
+}
+.menu-suggestion li img
+{
+	margin: 0 5px 0 0;
+}
+
+.tab-content-top {
+	padding: 64px 20px 80px 20px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.tab-content-top h3
+{
+	width: 100%;
+}
+.tab-content-top h3 a
+{
+	color: #F05B26;
+}
+.tab-content-top p{
+	width: 100%;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 500;
+   color: #F05B26;
+}
+.our-menu-slider, .our-menu-slider .slick-list, .our-menu-slider .slick-track, .our-menu-slider .slick-slide
+{
+	height: 100%;
+}
+.our-menu-list-section.bg-orange h3, .our-menu-list-section.bg-orange h4, .our-menu-list-section.bg-orange p, .our-menu-list-section.bg-orange .dish-item-price-box {
+    color: #FEFEF2;
+}
+.our-menu-list-section.bg-orange .dish-item {
+    border-bottom: 1px solid #FEFEF2;
+}
+.our-menu-list-section.bg-light-cream h3, .our-menu-list-section.bg-light-cream h4, .our-menu-list-section.bg-light-cream p, .our-menu-list-section.bg-light-cream .dish-item-price-box {
+    color: #F05B26;
+}
+.our-menu-list-section h4
+{
+	font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: unset;
+}
+.our-menu-list-section h5
+{
+	font-size: 18px;
+    line-height: 26px;
+    color: #F05B26;
+    font-weight: 500;
+}
+.our-menu-list-section p small{
+	font-size: 14px;
+    line-height: 20px;
+    color: #F05B26;
+    font-weight: 400;
+}
+.our-menu-list-section.bg-orange p small
+{
+	color: #FEFEF2;
+}
+
+.our-menu-slider img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.our-menu-slider .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	list-style: none;
+	gap: 12px;
+}
+
+.our-menu-slider li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #FEFEF2;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.our-menu-slider li.slick-active button {
+	background-color: #FEFEF2;
+}
+.our-menu-list-section
+{
+	min-height: 100vh;
+}
+.our-menu-list-section-without-img
+{
+	min-height: unset;
+	padding: 80px 20px;
+}
+.our-menu-list-section.our-menu-list-section-without-img .left-section
+{
+	padding: 0;
+}
+.our-menu-list-section.our-menu-list-section-without-img .right-section
+{
+	padding: 0;
+}
+.our-menu-list-section.our-menu-list-section-without-img.bg-light-cream .dish-item {
+    border-bottom: none;
+}
+.our-menu-list-section.our-menu-list-section-without-img .dish-item
+{
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.our-menu-list-section-without-img-inner
+{
+	gap: 80px;
+}
+.our-menu-list-section .left-section
+{
+	width: 50%;
+	padding: 80px 80px 80px calc((100vw - 1194px) / 2);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.our-menu-list-section .left-section .dish-item:last-child {
+	border: none;
+}
+.dish-item-description
+{
+	font-weight: 400;
+}
+.our-menu-list-section.bg-cream h3, .our-menu-list-section.bg-cream h4, .our-menu-list-section.bg-cream p, .our-menu-list-section.bg-cream .dish-item-price-box
+{
+	color: #FEFEF2;
+}
+.our-menu-list-section.bg-cream .dish-item
+{
+	border-bottom: 1px solid #FEFEF2;
+}
+.our-menu-list-section.bg-light-cream .dish-item
+{
+	border-bottom: 1px solid #F05B26;
+}
+.our-menu-list-section .left-section h3 {
+    margin-bottom: 32px;
+}
+.dishes-list-head
+{
+	display: flex;
+	margin-bottom: 24px;
+	text-align: right;
+   text-transform: uppercase;
+}
+.first-head
+{
+	width: 76%;
+	padding-right: 20px;
+}
+.hot
+{
+	width: 12%;
+}
+.cold
+{
+	width: 12%;
+}
+.dishes-list-head p
+{
+	text-align: right;
+}
+#night .dish-item-info
+{
+	width: 78%;
+}
+#night .dish-item-type
+{
+	width: 10%;
+}
+#night .dish-item-price-box
+{
+	width: 12%;
+}
+#drinks .dish-item-info
+{
+	width: 76%;
+}
+#drinks .dish-item-price-box
+{
+	width: 24%;
+}
+#drinks .dish-item-price-box .dish-price
+{
+	width: 50%;
+	text-align: right;
+}
+.our-menu-list-section-2 .first-head
+{
+	width: 70%;
+}
+.our-menu-list-section-2 .hot
+{
+	width: 15%;
+}
+.our-menu-list-section-2 .cold
+{
+	width: 15%;
+}
+#drinks .our-menu-list-section-2 .dish-item-info
+{
+	width: 70%;
+}
+#drinks .our-menu-list-section-2 .dish-item-price-box
+{
+	width: 30%;
+}
+
+/* T&C */
+.tc-sections p
+{
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+} 
+.tc-sections ul
+{
+	list-style: upper-alpha;
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+.tc-sections ul:last-child
+{
+	margin-bottom: 0;
+}
+.tc-sections ul:last-child li:last-child
+{
+	margin-bottom: 0;
+}
+.tc-sections ul li
+{
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.tc-sections ul li a, .tc-sections p a
+{
+	color: #F05B26;
+	text-decoration: underline;
+}
+.tc-sections ul li a:hover, .tc-sections p a:hover
+{
+	color: #000;
+}
+
+.tc-sections ul li ol
+{
+	padding: 20px 0px 0 20px;
+	list-style: upper-roman;
+}
+.tc-sections ul li ol ol
+{
+	list-style: disc;
+}
+.tc-sections h4
+{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+}
+#cookieOverlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: end;
+}
+#cookieModal {
+    padding: 32px 64px;
+    border-radius: 0;
+    text-align: center;
+    width: 100%;
+    background: #F05B26;
+    color: #EAE4DD;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#cookieModal p{
+	width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    color: #EAE4DD;
+}
+#cookieModal p a
+{
+	color: #F8AEB1;
+	text-decoration: underline;
+}
+#cookieModal p a:hover
+{
+	color: #EAE4DD;
+}
+#cookieModal .btn-secondary:hover
+{
+	background-color: #F7EFD7;
+    color: #000;
+    border: 1px solid #F7EFD7;
+}
+
+body.popup-open
+{
+    height: 100vh;
+    overflow: hidden;
+}

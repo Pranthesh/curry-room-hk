@@ -1,0 +1,155 @@
+.hero-section h1
+{
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    line-height: 82px;
+    font-family: 'FontquanXinYiGuanHeiTi';
+    font-weight: 500;
+}
+.hero-section h1 span
+{
+	font-weight: 500;
+	font-family: 'FontquanXinYiGuanHeiTi';
+    width: 100%;
+    text-align: center;
+    line-height: 82px;
+}
+.about-section h3
+{
+    font-size: 32px;
+    line-height: 38px;
+    font-family: 'FontquanXinYiGuanHeiTi';
+    font-weight: 400;
+}
+h2
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+    font-weight: 400;
+}
+h3
+{
+	font-size: 52px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.left-section h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';	
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: 400;
+}
+.curry-set-body p
+{
+	font-family: 'FontquanXinYiGuanHeiTi';	
+	font-size: 24px;
+	line-height: 28px;
+}
+.btn-primary
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+}
+.dish-item-name
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+.footer-left p
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+
+.footer-right ul li
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
+.inner-hero-section h3
+{
+	text-align: left;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+.the-atmosphere-left h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 500;
+}
+.crafted-section h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+.title-with-button h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
+.location-hero-section h3, .menu-hero-section h3
+{	
+	font-size: 72px;
+	line-height: 72px;
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
+.causeway-bay-left h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
+.menu-tabs .tab
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
+.tab-content-top h3
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+	font-size: 32px;
+    line-height: 38px;
+}
+.menu-suggestion li
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-size: 18px;
+	font-weight: 400;
+}
+ 
+.tab-content-top p
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+.mobile-header-center ul li
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 500 !important;
+}
+.inner-hero-section h1
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400 !important;
+}
+.the-atmosphere-left p
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400 !important;
+	font-size: 24px;
+	line-height: 28px;
+}
+.address-box-1 p, .address-box-2 p, .address-box-2 h5
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+}
+.tc-sections p, .tc-sections h4, .tc-sections ul li, .tc-sections strong
+{
+	font-family: 'FontquanXinYiGuanHeiTi';
+	font-weight: 400;
+}
